@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_docusign_spoke_docusign_templates">
+    <sn_docusign_spoke_docusign_templates action="INSERT_OR_UPDATE">
+        <account_id/>
+        <description/>
+        <last_updated/>
+        <sys_class_name>sn_docusign_spoke_docusign_templates</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 09:31:23</sys_created_on>
+        <sys_id>f9e24aeb532f6010f9a7ddeeff7b12b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Test1</sys_name>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name>sn_docusign_spoke_docusign_templates_f9e24aeb532f6010f9a7ddeeff7b12b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 09:31:23</sys_updated_on>
+        <template_id>101</template_id>
+        <template_name>Test1</template_name>
+    </sn_docusign_spoke_docusign_templates>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</claim_owner_scope>
+        <claim_timestamp>1791839f0270000001</claim_timestamp>
+        <metadata_update_name>sn_docusign_spoke_docusign_templates_f9e24aeb532f6010f9a7ddeeff7b12b9</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Flow Templates for Document Management</previous_claim_name>
+        <previous_claim_scope>50c33733537220106cc4ddeeff7b12e8</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-28 11:25:20</sys_created_on>
+        <sys_id>64965da1533f2010f9a7ddeeff7b12c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-28 11:25:20</sys_updated_on>
+    </sys_claim>
+</record_update>

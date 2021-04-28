@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_template_detail">
+    <sys_app_template_detail action="INSERT_OR_UPDATE">
+        <additional_uses/>
+        <author>ServiceNow</author>
+        <data_image/>
+        <detailed_description>This flow will execute from the ServiceCatalog and create a new SharePoint folder - the user must create a new Catalog Item with catalog variables for the Folder Name and any other values the user should specify.</detailed_description>
+        <function_type_list/>
+        <header_background_color/>
+        <header_image/>
+        <hero_image_1/>
+        <hero_image_2/>
+        <hero_image_3/>
+        <how_was_built/>
+        <icon/>
+        <metadata_list/>
+        <schema_image/>
+        <short_description/>
+        <sys_class_name>sys_app_template_detail</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 05:45:07</sys_created_on>
+        <sys_id>d3e57f73537220106cc4ddeeff7b12b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name>sys_app_template_detail_d3e57f73537220106cc4ddeeff7b12b3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 08:05:27</sys_updated_on>
+        <template display_value="Create a SharePoint Folder from the Service Catalog">93c53f73537220106cc4ddeeff7b12c0</template>
+    </sys_app_template_detail>
+    <sys_translated_text action="delete_multiple" query="documentkey=d3e57f73537220106cc4ddeeff7b12b3"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</claim_owner_scope>
+        <claim_timestamp>1791839f0870000001</claim_timestamp>
+        <metadata_update_name>sys_app_template_detail_d3e57f73537220106cc4ddeeff7b12b3</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Flow Templates for Document Management</previous_claim_name>
+        <previous_claim_scope>50c33733537220106cc4ddeeff7b12e8</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-28 11:25:20</sys_created_on>
+        <sys_id>24965da1533f2010f9a7ddeeff7b12f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-28 11:25:20</sys_updated_on>
+    </sys_claim>
+</record_update>

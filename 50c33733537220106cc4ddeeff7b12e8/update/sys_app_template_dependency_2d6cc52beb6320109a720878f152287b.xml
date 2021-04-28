@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_template_dependency">
+    <sys_app_template_dependency action="INSERT_OR_UPDATE">
+        <dependency_definition display_value="CONNECTION_CONFIGURED">d0283372c733101001fbe010bdc260ad</dependency_definition>
+        <input>{"spoke_name":"Adobe Sign Spoke","scope_name":"sn_adobesign_spoke","alias_id":"923430efdbd7ab006a555275ca9619a5"}</input>
+        <sys_class_name>sys_app_template_dependency</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 05:33:04</sys_created_on>
+        <sys_id>2d6cc52beb6320109a720878f152287b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name>sys_app_template_dependency_2d6cc52beb6320109a720878f152287b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-26 08:53:48</sys_updated_on>
+        <template display_value="Send a template document for signature from the Service Catalog">57968d4a534320106cc4ddeeff7b125e</template>
+    </sys_app_template_dependency>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</claim_owner_scope>
+        <claim_timestamp>1791839f0a80000001</claim_timestamp>
+        <metadata_update_name>sys_app_template_dependency_2d6cc52beb6320109a720878f152287b</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Flow Templates for Document Management</previous_claim_name>
+        <previous_claim_scope>50c33733537220106cc4ddeeff7b12e8</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-28 11:25:20</sys_created_on>
+        <sys_id>64965da1533f2010f9a7ddeeff7b12f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-28 11:25:20</sys_updated_on>
+    </sys_claim>
+</record_update>

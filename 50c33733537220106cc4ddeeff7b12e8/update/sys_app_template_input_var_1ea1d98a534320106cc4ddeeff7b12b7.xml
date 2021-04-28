@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_template_input_var">
+    <sys_app_template_input_var action="INSERT_OR_UPDATE">
+        <default/>
+        <description/>
+        <flow_input_variable display_value="Flow Protection">cfa1d98a534320106cc4ddeeff7b12d0</flow_input_variable>
+        <label>Flow Protection</label>
+        <mandatory>false</mandatory>
+        <name>flow_protection</name>
+        <sys_class_name>sys_app_template_input_var</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-23 17:33:49</sys_created_on>
+        <sys_id>1ea1d98a534320106cc4ddeeff7b12b7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>flow_protection</sys_name>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name>sys_app_template_input_var_1ea1d98a534320106cc4ddeeff7b12b7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:14:36</sys_updated_on>
+        <template display_value="Send a template document for signature from the Service Catalog">57968d4a534320106cc4ddeeff7b125e</template>
+        <type>string</type>
+    </sys_app_template_input_var>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</claim_owner_scope>
+        <claim_timestamp>1791839f0790000001</claim_timestamp>
+        <metadata_update_name>sys_app_template_input_var_1ea1d98a534320106cc4ddeeff7b12b7</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Flow Templates for Document Management</previous_claim_name>
+        <previous_claim_scope>50c33733537220106cc4ddeeff7b12e8</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-28 11:25:20</sys_created_on>
+        <sys_id>6c965da1533f2010f9a7ddeeff7b12f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-28 11:25:20</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>latest</compiler_build>
+        <copied_from>49a61546538320106cc4ddeeff7b12be</copied_from>
+        <copied_from_name>Update Send DocuSign Template Do</copied_from_name>
+        <description>Updates Send DocuSign Template Document Flow variables</description>
+        <ih_action>false</ih_action>
+        <internal_name>update_send_adobe_sign_template_document_flow</internal_name>
+        <label_cache>[{"name":"{{action.agreement_name}}","label":"action➛Agreement Name","type":"action","ref":""},{"name":"{{action.group_record}}","label":"action➛Group Record","type":"action","ref":"sn_adobesign_spoke_adobesign_group_details"},{"name":"{{action.result_behavior}}","label":"action➛Result Behavior","type":"action","ref":""},{"name":"{{action.flow_scope_sys_id}}","label":"action➛flow_scope_sys_id","type":"action","ref":""},{"name":"{{action.new_flow_sys_id}}","label":"action➛new_flow_sys_id","type":"action","ref":""},{"name":"{{action.docusign_account}}","label":"action➛docusign_account","type":"action","ref":""},{"name":"{{action.catalog_item}}","label":"action➛catalog_item","type":"action","ref":""},{"name":"{{action.docusign_template}}","label":"action➛docusign_template","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.returned_document_name}}","label":"action➛returned_document_name","type":"action","ref":""},{"name":"{{action.outbound_document_name}}","label":"action➛outbound_document_name","type":"action","ref":""},{"name":"{{action.recipient_role_name}}","label":"action➛recipient_role_name","type":"action","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].agreement_name}}","label":"step➛Pre Processing➛agreement_name","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].g}}","label":"step➛Pre Processing➛g","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].gr}}","label":"step➛Pre Processing➛gr","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].gro}}","label":"step➛Pre Processing➛gro","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].grou}}","label":"step➛Pre Processing➛grou","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group}}","label":"step➛Pre Processing➛group","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_}}","label":"step➛Pre Processing➛group_","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_r}}","label":"step➛Pre Processing➛group_r","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_re}}","label":"step➛Pre Processing➛group_re","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_rec}}","label":"step➛Pre Processing➛group_rec","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_reco}}","label":"step➛Pre Processing➛group_reco","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_recor}}","label":"step➛Pre Processing➛group_recor","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_record}}","label":"step➛Pre Processing➛group_record","type":"step","ref":"sn_adobesign_spoke_adobesign_group_details"},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].}}","label":"step➛Look Up Agreement ID➛","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].s}}","label":"step➛Look Up Agreement ID➛s","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].st}}","label":"step➛Look Up Agreement ID➛st","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].sta}}","label":"step➛Look Up Agreement ID➛sta","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].stat}}","label":"step➛Look Up Agreement ID➛stat","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].statu}}","label":"step➛Look Up Agreement ID➛statu","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].status}}","label":"step➛Look Up Agreement ID➛status","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].a}}","label":"step➛Look Up Agreement ID➛a","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].ag}}","label":"step➛Look Up Agreement ID➛ag","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agr}}","label":"step➛Look Up Agreement ID➛agr","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agre}}","label":"step➛Look Up Agreement ID➛agre","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agree}}","label":"step➛Look Up Agreement ID➛agree","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreem}}","label":"step➛Look Up Agreement ID➛agreem","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreeme}}","label":"step➛Look Up Agreement ID➛agreeme","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreemen}}","label":"step➛Look Up Agreement ID➛agreemen","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreement}}","label":"step➛Look Up Agreement ID➛agreement","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreement_}}","label":"step➛Look Up Agreement ID➛agreement_","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreement_i}}","label":"step➛Look Up Agreement ID➛agreement_i","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreement_id}}","label":"step➛Look Up Agreement ID➛agreement_id","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].c}}","label":"step➛Look Up Agreement ID➛c","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].co}}","label":"step➛Look Up Agreement ID➛co","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].cou}}","label":"step➛Look Up Agreement ID➛cou","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].coun}}","label":"step➛Look Up Agreement ID➛coun","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].count}}","label":"step➛Look Up Agreement ID➛count","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].error_message}}","label":"step➛Look Up Agreement ID➛error_message","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_record.sys_id}}","label":"step➛Pre Processing➛group_record➛Sys ID","type":"step","ref":""}]</label_cache>
+        <master_snapshot>ffb62e6353af6010f9a7ddeeff7b12f7</master_snapshot>
+        <name>Update Flow Action: Send Adobe Sign Template Document Flow</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3886e26353af6010f9a7ddeeff7b120c</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Update Flow Action: Send Adobe Sign Template Document Flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_3886e26353af6010f9a7ddeeff7b120c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-26 08:42:18</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=3886e26353af6010f9a7ddeeff7b120c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3886e26353af6010f9a7ddeeff7b120c"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</claim_owner_scope>
+        <claim_timestamp>1791839f0d00000001</claim_timestamp>
+        <metadata_update_name>sys_hub_action_type_definition_3886e26353af6010f9a7ddeeff7b120c</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Flow Templates for Document Management</previous_claim_name>
+        <previous_claim_scope>50c33733537220106cc4ddeeff7b12e8</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-28 11:25:20</sys_created_on>
+        <sys_id>2c965da1533f2010f9a7ddeeff7b12f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-28 11:25:20</sys_updated_on>
+    </sys_claim>
+    <sys_hub_step_instance action="delete_multiple" query="action=3886e26353af6010f9a7ddeeff7b120c^sys_idNOT IN0d86a66353af6010f9a7ddeeff7b121c"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Update Flow Action: Send Adobe Sign Template Document Flow">3886e26353af6010f9a7ddeeff7b120c</action>
+        <cid>97ca145c-0960-42a0-91d0-330bdb547e6a</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:46</sys_created_on>
+        <sys_id>0d86a66353af6010f9a7ddeeff7b121c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-26 08:40:14</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0d86a66353af6010f9a7ddeeff7b121c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0d86a66353af6010f9a7ddeeff7b121c</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>0586a66353af6010f9a7ddeeff7b123f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:47</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0d86a66353af6010f9a7ddeeff7b121c</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>4d86a66353af6010f9a7ddeeff7b123e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:47</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0d86a66353af6010f9a7ddeeff7b121c</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>8986a66353af6010f9a7ddeeff7b123f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-26 08:40:14</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+// ... code ...
+   var inputScope = inputs.flow_scope_sys_id;
+  var newFlow = inputs.new_flow_sys_id;
+  var catalogItem = inputs.catalog_item;
+  sn_flow.FlowTemplates.updateFlowActions(newFlow,'1', 'template_catalog_item', catalogItem);
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>0d86a66353af6010f9a7ddeeff7b121c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>c586a66353af6010f9a7ddeeff7b123f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:47</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0d86a66353af6010f9a7ddeeff7b121c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>0d86a66353af6010f9a7ddeeff7b121c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>4586a66353af6010f9a7ddeeff7b123e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_item</field>
+        <id>0d86a66353af6010f9a7ddeeff7b121c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>8586a66353af6010f9a7ddeeff7b1240</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_0d86a66353af6010f9a7ddeeff7b121c</table>
+        <value>{{action.catalog_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>docusign_template</field>
+        <id>0d86a66353af6010f9a7ddeeff7b121c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>4986a66353af6010f9a7ddeeff7b1240</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_0d86a66353af6010f9a7ddeeff7b121c</table>
+        <value>{{action.docusign_template}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow_scope_sys_id</field>
+        <id>0d86a66353af6010f9a7ddeeff7b121c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>0d86a66353af6010f9a7ddeeff7b1240</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_0d86a66353af6010f9a7ddeeff7b121c</table>
+        <value>{{action.flow_scope_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection</field>
+        <id>0d86a66353af6010f9a7ddeeff7b121c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>0d86a66353af6010f9a7ddeeff7b123d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>0d86a66353af6010f9a7ddeeff7b121c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>0986a66353af6010f9a7ddeeff7b123e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>new_flow_sys_id</field>
+        <id>0d86a66353af6010f9a7ddeeff7b121c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>cd86a66353af6010f9a7ddeeff7b1240</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_0d86a66353af6010f9a7ddeeff7b121c</table>
+        <value>{{action.new_flow_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>outbound_document_name</field>
+        <id>0d86a66353af6010f9a7ddeeff7b121c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-25 08:07:44</sys_created_on>
+        <sys_id>f09c892853f3a010f9a7ddeeff7b1252</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-25 08:07:44</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_0d86a66353af6010f9a7ddeeff7b121c</table>
+        <value>{{action.outbound_document_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>recipient_role_name</field>
+        <id>0d86a66353af6010f9a7ddeeff7b121c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-25 08:07:44</sys_created_on>
+        <sys_id>b49c892853f3a010f9a7ddeeff7b1252</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-25 08:07:44</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_0d86a66353af6010f9a7ddeeff7b121c</table>
+        <value>{{action.recipient_role_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>returned_document_name</field>
+        <id>0d86a66353af6010f9a7ddeeff7b121c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-25 08:07:44</sys_created_on>
+        <sys_id>3c9c892853f3a010f9a7ddeeff7b1251</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-25 08:07:44</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_0d86a66353af6010f9a7ddeeff7b121c</table>
+        <value>{{action.returned_document_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>0d86a66353af6010f9a7ddeeff7b121c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>c986a66353af6010f9a7ddeeff7b123e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=0d86a66353af6010f9a7ddeeff7b121c^sys_idNOT IN0586a66353af6010f9a7ddeeff7b1220,8586a66353af6010f9a7ddeeff7b1227,c586a66353af6010f9a7ddeeff7b122d"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_scope_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">0d86a66353af6010f9a7ddeeff7b121c</model>
+        <model_id>0d86a66353af6010f9a7ddeeff7b121c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_0d86a66353af6010f9a7ddeeff7b121c</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:46</sys_created_on>
+        <sys_id>0586a66353af6010f9a7ddeeff7b1220</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>new_flow_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">0d86a66353af6010f9a7ddeeff7b121c</model>
+        <model_id>0d86a66353af6010f9a7ddeeff7b121c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_0d86a66353af6010f9a7ddeeff7b121c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:46</sys_created_on>
+        <sys_id>8586a66353af6010f9a7ddeeff7b1227</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>catalog_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">0d86a66353af6010f9a7ddeeff7b121c</model>
+        <model_id>0d86a66353af6010f9a7ddeeff7b121c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_0d86a66353af6010f9a7ddeeff7b121c</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:47</sys_created_on>
+        <sys_id>c586a66353af6010f9a7ddeeff7b122d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_action_input action="delete_multiple" query="model=3886e26353af6010f9a7ddeeff7b120c^sys_idNOT IN4186a66353af6010f9a7ddeeff7b120f,7086666353af6010f9a7ddeeff7b12ff,cd86a66353af6010f9a7ddeeff7b1208"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=34347a53-f0ca-4c50-935b-fd3397f32ee9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>catalog_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>catalog_item</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Flow Action: Send Adobe Sign Template Document Flow">3886e26353af6010f9a7ddeeff7b120c</model>
+        <model_id>3886e26353af6010f9a7ddeeff7b120c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_3886e26353af6010f9a7ddeeff7b120c</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:46</sys_created_on>
+        <sys_id>4186a66353af6010f9a7ddeeff7b120f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=08375424-c1d6-4884-b031-9d4da4b37131</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_scope_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>flow_scope_sys_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Flow Action: Send Adobe Sign Template Document Flow">3886e26353af6010f9a7ddeeff7b120c</model>
+        <model_id>3886e26353af6010f9a7ddeeff7b120c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_3886e26353af6010f9a7ddeeff7b120c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:46</sys_created_on>
+        <sys_id>7086666353af6010f9a7ddeeff7b12ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ac63fc93-9374-4ae2-add4-b10cdbbdc1fd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>new_flow_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>new_flow_sys_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Flow Action: Send Adobe Sign Template Document Flow">3886e26353af6010f9a7ddeeff7b120c</model>
+        <model_id>3886e26353af6010f9a7ddeeff7b120c</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_3886e26353af6010f9a7ddeeff7b120c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:46</sys_created_on>
+        <sys_id>cd86a66353af6010f9a7ddeeff7b1208</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_3886e26353af6010f9a7ddeeff7b120c^sys_idNOT IN0d86a66353af6010f9a7ddeeff7b1213,8986a66353af6010f9a7ddeeff7b120d,c186a66353af6010f9a7ddeeff7b1207"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>catalog_item</element>
+        <help/>
+        <hint/>
+        <label>catalog_item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_3886e26353af6010f9a7ddeeff7b120c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:46</sys_created_on>
+        <sys_id>0d86a66353af6010f9a7ddeeff7b1213</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>new_flow_sys_id</element>
+        <help/>
+        <hint/>
+        <label>new_flow_sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_3886e26353af6010f9a7ddeeff7b120c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:46</sys_created_on>
+        <sys_id>8986a66353af6010f9a7ddeeff7b120d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>flow_scope_sys_id</element>
+        <help/>
+        <hint/>
+        <label>flow_scope_sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_3886e26353af6010f9a7ddeeff7b120c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:06:46</sys_created_on>
+        <sys_id>c186a66353af6010f9a7ddeeff7b1207</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:06:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=3886e26353af6010f9a7ddeeff7b120c^sys_idNOT IN04c66e6353af6010f9a7ddeeff7b126d"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Update Flow Action: Send Adobe Sign Template Document Flow">3886e26353af6010f9a7ddeeff7b120c</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"04c66e6353af6010f9a7ddeeff7b126d","name":"plan"}}</plan>
+        <snapshot>739d9eb453f32010f9a7ddeeff7b1286</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>04c66e6353af6010f9a7ddeeff7b126d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-26 08:40:20</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Updates Send DocuSign Template Document Flow variables</description>
+        <internal_name>update_send_adobe_sign_template_document_flow</internal_name>
+        <label_cache>[{"name":"{{action.agreement_name}}","label":"action➛Agreement Name","type":"action","ref":""},{"name":"{{action.group_record}}","label":"action➛Group Record","type":"action","ref":"sn_adobesign_spoke_adobesign_group_details"},{"name":"{{action.result_behavior}}","label":"action➛Result Behavior","type":"action","ref":""},{"name":"{{action.flow_scope_sys_id}}","label":"action➛flow_scope_sys_id","type":"action","ref":""},{"name":"{{action.new_flow_sys_id}}","label":"action➛new_flow_sys_id","type":"action","ref":""},{"name":"{{action.docusign_account}}","label":"action➛docusign_account","type":"action","ref":""},{"name":"{{action.catalog_item}}","label":"action➛catalog_item","type":"action","ref":""},{"name":"{{action.docusign_template}}","label":"action➛docusign_template","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.returned_document_name}}","label":"action➛returned_document_name","type":"action","ref":""},{"name":"{{action.outbound_document_name}}","label":"action➛outbound_document_name","type":"action","ref":""},{"name":"{{action.recipient_role_name}}","label":"action➛recipient_role_name","type":"action","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].agreement_name}}","label":"step➛Pre Processing➛agreement_name","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].g}}","label":"step➛Pre Processing➛g","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].gr}}","label":"step➛Pre Processing➛gr","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].gro}}","label":"step➛Pre Processing➛gro","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].grou}}","label":"step➛Pre Processing➛grou","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group}}","label":"step➛Pre Processing➛group","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_}}","label":"step➛Pre Processing➛group_","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_r}}","label":"step➛Pre Processing➛group_r","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_re}}","label":"step➛Pre Processing➛group_re","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_rec}}","label":"step➛Pre Processing➛group_rec","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_reco}}","label":"step➛Pre Processing➛group_reco","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_recor}}","label":"step➛Pre Processing➛group_recor","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_record}}","label":"step➛Pre Processing➛group_record","type":"step","ref":"sn_adobesign_spoke_adobesign_group_details"},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].}}","label":"step➛Look Up Agreement ID➛","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].s}}","label":"step➛Look Up Agreement ID➛s","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].st}}","label":"step➛Look Up Agreement ID➛st","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].sta}}","label":"step➛Look Up Agreement ID➛sta","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].stat}}","label":"step➛Look Up Agreement ID➛stat","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].statu}}","label":"step➛Look Up Agreement ID➛statu","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].status}}","label":"step➛Look Up Agreement ID➛status","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].a}}","label":"step➛Look Up Agreement ID➛a","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].ag}}","label":"step➛Look Up Agreement ID➛ag","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agr}}","label":"step➛Look Up Agreement ID➛agr","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agre}}","label":"step➛Look Up Agreement ID➛agre","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agree}}","label":"step➛Look Up Agreement ID➛agree","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreem}}","label":"step➛Look Up Agreement ID➛agreem","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreeme}}","label":"step➛Look Up Agreement ID➛agreeme","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreemen}}","label":"step➛Look Up Agreement ID➛agreemen","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreement}}","label":"step➛Look Up Agreement ID➛agreement","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreement_}}","label":"step➛Look Up Agreement ID➛agreement_","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreement_i}}","label":"step➛Look Up Agreement ID➛agreement_i","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreement_id}}","label":"step➛Look Up Agreement ID➛agreement_id","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].c}}","label":"step➛Look Up Agreement ID➛c","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].co}}","label":"step➛Look Up Agreement ID➛co","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].cou}}","label":"step➛Look Up Agreement ID➛cou","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].coun}}","label":"step➛Look Up Agreement ID➛coun","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].count}}","label":"step➛Look Up Agreement ID➛count","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].error_message}}","label":"step➛Look Up Agreement ID➛error_message","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_record.sys_id}}","label":"step➛Pre Processing➛group_record➛Sys ID","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Update Flow Action: Send Adobe Sign Template Document Flow</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Update Flow Action: Send Adobe Sign Template Document Flow">3886e26353af6010f9a7ddeeff7b120c</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ffb62e6353af6010f9a7ddeeff7b12f7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-26 08:40:19</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=ffb62e6353af6010f9a7ddeeff7b12f7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=ffb62e6353af6010f9a7ddeeff7b12f7"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=ffb62e6353af6010f9a7ddeeff7b12f7^sys_idNOT IN7bb66e6353af6010f9a7ddeeff7b120f"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Update Flow Action: Send Adobe Sign Template Document Flow">ffb62e6353af6010f9a7ddeeff7b12f7</action>
+        <cid>97ca145c-0960-42a0-91d0-330bdb547e6a</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>7bb66e6353af6010f9a7ddeeff7b120f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-26 08:40:19</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7bb66e6353af6010f9a7ddeeff7b120f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7bb66e6353af6010f9a7ddeeff7b120f</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>3fb66e6353af6010f9a7ddeeff7b1229</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7bb66e6353af6010f9a7ddeeff7b120f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>7bb66e6353af6010f9a7ddeeff7b1229</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7bb66e6353af6010f9a7ddeeff7b120f</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>b7b66e6353af6010f9a7ddeeff7b1229</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <value/>
+        <variable display_value="MID Selection">cbd1070373531010791f94596bf6a776</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>7bb66e6353af6010f9a7ddeeff7b120f</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>ffb66e6353af6010f9a7ddeeff7b1229</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-26 08:40:19</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+// ... code ...
+   var inputScope = inputs.flow_scope_sys_id;
+  var newFlow = inputs.new_flow_sys_id;
+  var catalogItem = inputs.catalog_item;
+  sn_flow.FlowTemplates.updateFlowActions(newFlow,'1', 'template_catalog_item', catalogItem);
+  
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7bb66e6353af6010f9a7ddeeff7b120f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>7bb66e6353af6010f9a7ddeeff7b120f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>bfb66e6353af6010f9a7ddeeff7b1228</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_item</field>
+        <id>7bb66e6353af6010f9a7ddeeff7b120f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>7bb66e6353af6010f9a7ddeeff7b122a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_7bb66e6353af6010f9a7ddeeff7b120f</table>
+        <value>{{action.catalog_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow_scope_sys_id</field>
+        <id>7bb66e6353af6010f9a7ddeeff7b120f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>3fb66e6353af6010f9a7ddeeff7b122a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_7bb66e6353af6010f9a7ddeeff7b120f</table>
+        <value>{{action.flow_scope_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection</field>
+        <id>7bb66e6353af6010f9a7ddeeff7b120f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>fbb66e6353af6010f9a7ddeeff7b1228</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_selection_type</field>
+        <id>7bb66e6353af6010f9a7ddeeff7b120f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>73b66e6353af6010f9a7ddeeff7b1229</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>new_flow_sys_id</field>
+        <id>7bb66e6353af6010f9a7ddeeff7b120f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>ffb66e6353af6010f9a7ddeeff7b122a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_7bb66e6353af6010f9a7ddeeff7b120f</table>
+        <value>{{action.new_flow_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>outbound_document_name</field>
+        <id>7bb66e6353af6010f9a7ddeeff7b120f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-25 08:08:14</sys_created_on>
+        <sys_id>7fac0d2853f3a010f9a7ddeeff7b12c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-25 08:08:14</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_7bb66e6353af6010f9a7ddeeff7b120f</table>
+        <value>{{action.outbound_document_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>recipient_role_name</field>
+        <id>7bb66e6353af6010f9a7ddeeff7b120f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-25 08:08:14</sys_created_on>
+        <sys_id>33ac0d2853f3a010f9a7ddeeff7b12c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-25 08:08:14</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_7bb66e6353af6010f9a7ddeeff7b120f</table>
+        <value>{{action.recipient_role_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>returned_document_name</field>
+        <id>7bb66e6353af6010f9a7ddeeff7b120f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-25 08:08:13</sys_created_on>
+        <sys_id>bbac0d2853f3a010f9a7ddeeff7b12c7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-25 08:08:13</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_7bb66e6353af6010f9a7ddeeff7b120f</table>
+        <value>{{action.returned_document_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>7bb66e6353af6010f9a7ddeeff7b120f</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>37b66e6353af6010f9a7ddeeff7b1229</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=7bb66e6353af6010f9a7ddeeff7b120f^sys_idNOT IN77b66e6353af6010f9a7ddeeff7b1219,b7b66e6353af6010f9a7ddeeff7b121f,fbb66e6353af6010f9a7ddeeff7b1212"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>new_flow_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>new_flow_sys_id</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">7bb66e6353af6010f9a7ddeeff7b120f</model>
+        <model_id>7bb66e6353af6010f9a7ddeeff7b120f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_7bb66e6353af6010f9a7ddeeff7b120f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>77b66e6353af6010f9a7ddeeff7b1219</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>catalog_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>catalog_item</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">7bb66e6353af6010f9a7ddeeff7b120f</model>
+        <model_id>7bb66e6353af6010f9a7ddeeff7b120f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_7bb66e6353af6010f9a7ddeeff7b120f</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>b7b66e6353af6010f9a7ddeeff7b121f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_scope_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>flow_scope_sys_id</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">7bb66e6353af6010f9a7ddeeff7b120f</model>
+        <model_id>7bb66e6353af6010f9a7ddeeff7b120f</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_7bb66e6353af6010f9a7ddeeff7b120f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>fbb66e6353af6010f9a7ddeeff7b1212</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_action_input action="delete_multiple" query="model=ffb62e6353af6010f9a7ddeeff7b12f7^sys_idNOT IN73b66e6353af6010f9a7ddeeff7b1202,b7b62e6353af6010f9a7ddeeff7b12fb,f3b66e6353af6010f9a7ddeeff7b1208"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ac63fc93-9374-4ae2-add4-b10cdbbdc1fd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>new_flow_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>new_flow_sys_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Flow Action: Send Adobe Sign Template Document Flow">ffb62e6353af6010f9a7ddeeff7b12f7</model>
+        <model_id>ffb62e6353af6010f9a7ddeeff7b12f7</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_ffb62e6353af6010f9a7ddeeff7b12f7</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>73b66e6353af6010f9a7ddeeff7b1202</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=08375424-c1d6-4884-b031-9d4da4b37131</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_scope_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>flow_scope_sys_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Flow Action: Send Adobe Sign Template Document Flow">ffb62e6353af6010f9a7ddeeff7b12f7</model>
+        <model_id>ffb62e6353af6010f9a7ddeeff7b12f7</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_ffb62e6353af6010f9a7ddeeff7b12f7</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>b7b62e6353af6010f9a7ddeeff7b12fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=34347a53-f0ca-4c50-935b-fd3397f32ee9</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>catalog_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>catalog_item</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Update Flow Action: Send Adobe Sign Template Document Flow">ffb62e6353af6010f9a7ddeeff7b12f7</model>
+        <model_id>ffb62e6353af6010f9a7ddeeff7b12f7</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_ffb62e6353af6010f9a7ddeeff7b12f7</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>f3b66e6353af6010f9a7ddeeff7b1208</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_ffb62e6353af6010f9a7ddeeff7b12f7^sys_idNOT IN3fb66e6353af6010f9a7ddeeff7b1206,bbb66e6353af6010f9a7ddeeff7b1200,bfb66e6353af6010f9a7ddeeff7b120c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>new_flow_sys_id</element>
+        <help/>
+        <hint/>
+        <label>new_flow_sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_ffb62e6353af6010f9a7ddeeff7b12f7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>3fb66e6353af6010f9a7ddeeff7b1206</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>flow_scope_sys_id</element>
+        <help/>
+        <hint/>
+        <label>flow_scope_sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_ffb62e6353af6010f9a7ddeeff7b12f7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>bbb66e6353af6010f9a7ddeeff7b1200</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>catalog_item</element>
+        <help/>
+        <hint/>
+        <label>catalog_item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_ffb62e6353af6010f9a7ddeeff7b12f7</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-22 12:07:47</sys_created_on>
+        <sys_id>bfb66e6353af6010f9a7ddeeff7b120c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-22 12:07:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>3886e26353af6010f9a7ddeeff7b120c</sys_id>
+        <latest_snapshot>ffb62e6353af6010f9a7ddeeff7b12f7</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>
