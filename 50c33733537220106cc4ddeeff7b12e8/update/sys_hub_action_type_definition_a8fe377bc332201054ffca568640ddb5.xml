@@ -1,0 +1,2673 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description> </description>
+        <ih_action>false</ih_action>
+        <internal_name>ft_copy_new_record_attachments_to_google_drive</internal_name>
+        <label_cache>[{"name":"{{action.agreement_name}}","label":"action➛Agreement Name","type":"action","ref":""},{"name":"{{action.group_record}}","label":"action➛Group Record","type":"action","ref":"sn_adobesign_spoke_adobesign_group_details"},{"name":"{{action.result_behavior}}","label":"action➛Result Behavior","type":"action","ref":""},{"name":"{{action.flow_scope_sys_id}}","label":"action➛flow_scope_sys_id","type":"action","ref":""},{"name":"{{action.new_flow_sys_id}}","label":"action➛new_flow_sys_id","type":"action","ref":""},{"name":"{{action.docusign_account}}","label":"action➛docusign_account","type":"action","ref":""},{"name":"{{action.catalog_item}}","label":"action➛catalog_item","type":"action","ref":""},{"name":"{{action.docusign_template}}","label":"action➛docusign_template","type":"action","ref":""},{"name":"{{action._}}","label":"action➛","type":"action","ref":""},{"name":"{{action.returned_document_name}}","label":"action➛returned_document_name","type":"action","ref":""},{"name":"{{action.outbound_document_name}}","label":"action➛outbound_document_name","type":"action","ref":""},{"name":"{{action.recipient_role_name}}","label":"action➛recipient_role_name","type":"action","ref":""},{"name":"{{action.docusign_connection}}","label":"action➛docusign_connection","type":"action","ref":""},{"name":"{{action.valid_days}}","label":"action➛valid_days","type":"action","ref":""},{"name":"{{action.site_location}}","label":"action➛site_location","type":"action","ref":""},{"name":"{{action.folder_location}}","label":"action➛folder_location","type":"action","ref":""},{"name":"{{action.folder_name}}","label":"action➛folder_name","type":"action","ref":""},{"name":"{{action.doc_lib_name}}","label":"action➛doc_lib_name","type":"action","ref":""},{"name":"{{action.spoke_connection}}","label":"action➛spoke_connection","type":"action","ref":""},{"name":"{{action.document_library_name}}","label":"action➛document_library_name","type":"action","ref":""},{"name":"{{action.sp_connection}}","label":"action➛sp_connection","type":"action","ref":""},{"name":"{{action.document}}","label":"action➛Document","type":"action","ref":""},{"name":"{{action.recipient_name}}","label":"action➛Recipient Name","type":"action","ref":""},{"name":"{{action.recipient_email}}","label":"action➛Recipient Email","type":"action","ref":""},{"name":"{{action.email_subject}}","label":"action➛Email Subject","type":"action","ref":""},{"name":"{{action.email_body}}","label":"action➛Email Body","type":"action","ref":""},{"name":"{{action.account}}","label":"action➛Account","type":"action","ref":"sn_docusign_spoke_accounts"},{"name":"{{action.account.id}}","label":"action➛Account➛ID","type":"action","ref":""},{"name":"{{action.account.alias}}","label":"action➛Account➛Alias","type":"action","ref":"sys_alias"},{"name":"{{action.envelope_expire_days}}","label":"action➛Envelope Expire Days","type":"action","ref":""},{"name":"{{action.account.sys_id}}","label":"action➛Account➛Sys ID","type":"action","ref":""},{"name":"{{action.use_embedded_signing}}","label":"action➛Use Embedded Signing","type":"action","ref":""},{"name":"{{action.embedded_signing_recipient}}","label":"action➛Embedded Signing Recipient","type":"action","ref":"sys_user"},{"name":"{{action.embedded_signing_recipient.name}}","label":"action➛Embedded Signing Recipient➛Name","type":"action","ref":""},{"name":"{{action.embedded_signing_recipient.email}}","label":"action➛Embedded Signing Recipient➛Email","type":"action","ref":""},{"name":"{{action.embedded_signing_recipient.user_name}}","label":"action➛Embedded Signing Recipient➛User ID","type":"action","ref":""},{"name":"{{action.document.file_name}}","label":"action➛Document➛File name","type":"action","ref":""},{"name":"{{action.document_name}}","label":"action➛Document Name","type":"action","ref":""},{"name":"{{action.folder_path}}","label":"action➛folder_path","type":"action","ref":""},{"name":"{{action.slack_connection}}","label":"action➛slack_connection","type":"action","ref":""},{"name":"{{action.box_connection}}","label":"action➛box_connection","type":"action","ref":""},{"name":"{{action.trigger_table}}","label":"action➛trigger_table","type":"action","ref":""},{"name":"{{action.file_or_folder_name}}","label":"action➛file_or_folder_name","type":"action","ref":""},{"name":"{{action.file_description}}","label":"action➛file_description","type":"action","ref":""},{"name":"{{action.googledrive_connection}}","label":"action➛googledrive_connection","type":"action","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].agreement_name}}","label":"step➛Pre Processing➛agreement_name","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].g}}","label":"step➛Pre Processing➛g","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].gr}}","label":"step➛Pre Processing➛gr","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].gro}}","label":"step➛Pre Processing➛gro","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].grou}}","label":"step➛Pre Processing➛grou","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group}}","label":"step➛Pre Processing➛group","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_}}","label":"step➛Pre Processing➛group_","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_r}}","label":"step➛Pre Processing➛group_r","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_re}}","label":"step➛Pre Processing➛group_re","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_rec}}","label":"step➛Pre Processing➛group_rec","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_reco}}","label":"step➛Pre Processing➛group_reco","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_recor}}","label":"step➛Pre Processing➛group_recor","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_record}}","label":"step➛Pre Processing➛group_record","type":"step","ref":"sn_adobesign_spoke_adobesign_group_details"},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].}}","label":"step➛Look Up Agreement ID➛","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].s}}","label":"step➛Look Up Agreement ID➛s","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].st}}","label":"step➛Look Up Agreement ID➛st","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].sta}}","label":"step➛Look Up Agreement ID➛sta","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].stat}}","label":"step➛Look Up Agreement ID➛stat","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].statu}}","label":"step➛Look Up Agreement ID➛statu","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].status}}","label":"step➛Look Up Agreement ID➛status","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].a}}","label":"step➛Look Up Agreement ID➛a","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].ag}}","label":"step➛Look Up Agreement ID➛ag","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agr}}","label":"step➛Look Up Agreement ID➛agr","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agre}}","label":"step➛Look Up Agreement ID➛agre","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agree}}","label":"step➛Look Up Agreement ID➛agree","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreem}}","label":"step➛Look Up Agreement ID➛agreem","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreeme}}","label":"step➛Look Up Agreement ID➛agreeme","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreemen}}","label":"step➛Look Up Agreement ID➛agreemen","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreement}}","label":"step➛Look Up Agreement ID➛agreement","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreement_}}","label":"step➛Look Up Agreement ID➛agreement_","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreement_i}}","label":"step➛Look Up Agreement ID➛agreement_i","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].agreement_id}}","label":"step➛Look Up Agreement ID➛agreement_id","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].c}}","label":"step➛Look Up Agreement ID➛c","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].co}}","label":"step➛Look Up Agreement ID➛co","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].cou}}","label":"step➛Look Up Agreement ID➛cou","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].coun}}","label":"step➛Look Up Agreement ID➛coun","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].count}}","label":"step➛Look Up Agreement ID➛count","type":"step","ref":""},{"name":"{{step[c23bf5ea-f470-4a17-abf1-dded0c5126e0].error_message}}","label":"step➛Look Up Agreement ID➛error_message","type":"step","ref":""},{"name":"{{step[adf0d500-06da-4d70-bf41-f5121b01f5d0].group_record.sys_id}}","label":"step➛Pre Processing➛group_record➛Sys ID","type":"step","ref":""},{"name":"{{step[8f32cbc7-6023-4e9d-bc6c-a32829c80454].enc_data}}","label":"step➛Pre Processing➛enc_data","type":"step","ref":""},{"name":"{{step[8f32cbc7-6023-4e9d-bc6c-a32829c80454].email_subject}}","label":"step➛Pre Processing➛email_subject","type":"step","ref":""},{"name":"{{step[8f32cbc7-6023-4e9d-bc6c-a32829c80454].document_name}}","label":"step➛Pre Processing➛document_name","type":"step","ref":""},{"name":"{{step[8f32cbc7-6023-4e9d-bc6c-a32829c80454].recipients}}","label":"step➛Pre Processing➛recipients","type":"step","ref":""},{"name":"{{step[8f32cbc7-6023-4e9d-bc6c-a32829c80454].email_body}}","label":"step➛Pre Processing➛email_body","type":"step","ref":""},{"name":"{{step[29e513db-4440-4e10-9155-a51918abf635].error_message}}","label":"step➛Send Adhoc Signature Request to User➛Error Message","type":"step","ref":""},{"name":"{{step[29e513db-4440-4e10-9155-a51918abf635].status_code}}","label":"step➛Send Adhoc Signature Request to User➛Status Code","type":"step","ref":""},{"name":"{{step[29e513db-4440-4e10-9155-a51918abf635].response_body}}","label":"step➛Send Adhoc Signature Request to User➛Response Body","type":"step","ref":""},{"name":"{{step[70c5b265-a4c9-4307-83ea-731eccd4be5f].status}}","label":"step➛Handle Errors➛status","type":"step","ref":""},{"name":"{{step[70c5b265-a4c9-4307-83ea-731eccd4be5f].error_message}}","label":"step➛Handle Errors➛error_message","type":"step","ref":""},{"name":"{{step[70c5b265-a4c9-4307-83ea-731eccd4be5f].envelope_id}}","label":"step➛Handle Errors➛envelope_id","type":"step","ref":""},{"name":"{{step[70c5b265-a4c9-4307-83ea-731eccd4be5f].envelope_uri}}","label":"step➛Handle Errors➛envelope_uri","type":"step","ref":""},{"name":"{{step[8f32cbc7-6023-4e9d-bc6c-a32829c80454].envelope_expire_days}}","label":"step➛Pre Processing➛envelope_expire_days_payload","type":"step","ref":""},{"name":"{{step[3f906b20-abdc-4dd3-8806-32be1bb59828].e}}","label":"step➛Look Up Envelope Record➛e","type":"step","ref":""},{"name":"{{step[3f906b20-abdc-4dd3-8806-32be1bb59828].en}}","label":"step➛Look Up Envelope Record➛en","type":"step","ref":""},{"name":"{{step[3f906b20-abdc-4dd3-8806-32be1bb59828].env}}","label":"step➛Look Up Envelope Record➛env","type":"step","ref":""},{"name":"{{step[3f906b20-abdc-4dd3-8806-32be1bb59828].enve}}","label":"step➛Look Up Envelope Record➛enve","type":"step","ref":""},{"name":"{{step[3f906b20-abdc-4dd3-8806-32be1bb59828].envel}}","label":"step➛Look Up Envelope Record➛envel","type":"step","ref":""},{"name":"{{step[3f906b20-abdc-4dd3-8806-32be1bb59828].envelo}}","label":"step➛Look Up Envelope Record➛envelo","type":"step","ref":""},{"name":"{{step[3f906b20-abdc-4dd3-8806-32be1bb59828].envelop}}","label":"step➛Look Up Envelope Record➛envelop","type":"step","ref":""},{"name":"{{step[3f906b20-abdc-4dd3-8806-32be1bb59828].envelope}}","label":"step➛Look Up Envelope Record➛envelope","type":"step","ref":""},{"name":"{{step[3f906b20-abdc-4dd3-8806-32be1bb59828].envelope_}}","label":"step➛Look Up Envelope Record➛envelope_","type":"step","ref":""},{"name":"{{step[3f906b20-abdc-4dd3-8806-32be1bb59828].envelope_record}}","label":"step➛Look Up Envelope Record➛envelope_record","type":"step","ref":"sn_docusign_spoke_envelopes"},{"name":"{{step[8f32cbc7-6023-4e9d-bc6c-a32829c80454].pre_status}}","label":"step➛Pre Processing➛pre_status","type":"step","ref":""},{"name":"{{step[8f32cbc7-6023-4e9d-bc6c-a32829c80454].recipient_name}}","label":"step➛Pre Processing➛recipient_name","type":"step","ref":""},{"name":"{{step[8f32cbc7-6023-4e9d-bc6c-a32829c80454].recipient_email}}","label":"step➛Pre Processing➛recipient_email","type":"step","ref":""},{"name":"{{step[70c5b265-a4c9-4307-83ea-731eccd4be5f].recipient_email}}","label":"step➛Handle Errors➛recipient_email","type":"step","ref":""},{"name":"{{step[70c5b265-a4c9-4307-83ea-731eccd4be5f].recipient_name}}","label":"step➛Handle Errors➛recipient_name","type":"step","ref":""},{"name":"{{step[8f32cbc7-6023-4e9d-bc6c-a32829c80454].api_version}}","label":"step➛Pre Processing➛API Version","type":"step","ref":""},{"name":"{{step[8f32cbc7-6023-4e9d-bc6c-a32829c80454].document_type}}","label":"step➛Pre Processing➛document_type","type":"step","ref":""}]</label_cache>
+        <master_snapshot>5afeb77bc332201054ffca568640dd00</master_snapshot>
+        <name>FT Copy new record attachments to Google Drive</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a8fe377bc332201054ffca568640ddb5</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>FT Copy new record attachments to Google Drive</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_a8fe377bc332201054ffca568640ddb5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-25 14:22:51</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=a8fe377bc332201054ffca568640ddb5"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a8fe377bc332201054ffca568640ddb5"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</claim_owner_scope>
+        <claim_timestamp>1791839f0ae0000001</claim_timestamp>
+        <metadata_update_name>sys_hub_action_type_definition_a8fe377bc332201054ffca568640ddb5</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>Flow Templates for Document Management</previous_claim_name>
+        <previous_claim_scope>50c33733537220106cc4ddeeff7b12e8</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-28 11:25:20</sys_created_on>
+        <sys_id>20965da1533f2010f9a7ddeeff7b12f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-28 11:25:20</sys_updated_on>
+    </sys_claim>
+    <sys_hub_step_instance action="delete_multiple" query="action=a8fe377bc332201054ffca568640ddb5^sys_idNOT INf4fe377bc332201054ffca568640ddde"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="FT Copy new record attachments to Google Drive">a8fe377bc332201054ffca568640ddb5</action>
+        <cid>d0029267-ff70-4dea-8fd6-53051916c8ee</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>f4fe377bc332201054ffca568640ddde</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:33</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f4fe377bc332201054ffca568640ddde"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f4fe377bc332201054ffca568640ddde</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>38fe777bc332201054ffca568640dd08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:33</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var inputScope = inputs.flow_scope_sys_id;
+  var newFlow = inputs.new_flow_sys_id;
+  var folderName = inputs.file_or_folder_name;
+  var fileDescription = inputs.file_description;
+  var googledriveConnection = inputs.googledrive_connection;
+  var triggerTable = inputs.trigger_table;
+
+  //update trigger table name
+  sn_flow.FlowTemplates.updateFlowTrigger(newFlow, 'condition', "table_name="+triggerTable);
+  
+  // update folderpath onedrive
+  sn_flow.FlowTemplates.updateFlowActions(newFlow, '1', 'file_or_folder_name', folderName);
+  
+  // update folderpath onedrive
+  sn_flow.FlowTemplates.updateFlowActions(newFlow, '3', 'file_description', fileDescription);
+
+  new global.FlowTemplatesHelper().activateConnection(googledriveConnection);
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f4fe377bc332201054ffca568640ddde</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>fcfe777bc332201054ffca568640dd07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:33</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f4fe377bc332201054ffca568640ddde"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>f4fe377bc332201054ffca568640ddde</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>34fe777bc332201054ffca568640dd07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file_description</field>
+        <id>f4fe377bc332201054ffca568640ddde</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>f0fe777bc332201054ffca568640dd0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:33</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f4fe377bc332201054ffca568640ddde</table>
+        <value>{{action.file_description}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file_or_folder_name</field>
+        <id>f4fe377bc332201054ffca568640ddde</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>34fe777bc332201054ffca568640dd09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:33</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f4fe377bc332201054ffca568640ddde</table>
+        <value>{{action.file_or_folder_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow_scope_sys_id</field>
+        <id>f4fe377bc332201054ffca568640ddde</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>7cfe777bc332201054ffca568640dd09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:33</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f4fe377bc332201054ffca568640ddde</table>
+        <value>{{action.flow_scope_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>googledrive_connection</field>
+        <id>f4fe377bc332201054ffca568640ddde</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>b8fe777bc332201054ffca568640dd09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:33</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f4fe377bc332201054ffca568640ddde</table>
+        <value>{{action.googledrive_connection}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>new_flow_sys_id</field>
+        <id>f4fe377bc332201054ffca568640ddde</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>30fe777bc332201054ffca568640dd0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:33</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f4fe377bc332201054ffca568640ddde</table>
+        <value>{{action.new_flow_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>f4fe377bc332201054ffca568640ddde</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>7cfe777bc332201054ffca568640dd07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:33</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>trigger_table</field>
+        <id>f4fe377bc332201054ffca568640ddde</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>f4fe777bc332201054ffca568640dd09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:33</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f4fe377bc332201054ffca568640ddde</table>
+        <value>{{action.trigger_table}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f4fe377bc332201054ffca568640ddde^sys_idNOT IN30fe377bc332201054ffca568640dde2,34fe377bc332201054ffca568640dde8,38fe377bc332201054ffca568640ddfd,78fe377bc332201054ffca568640dded,bcfe377bc332201054ffca568640ddf2,f0fe377bc332201054ffca568640ddf8"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_scope_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">f4fe377bc332201054ffca568640ddde</model>
+        <model_id>f4fe377bc332201054ffca568640ddde</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f4fe377bc332201054ffca568640ddde</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>30fe377bc332201054ffca568640dde2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>new_flow_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">f4fe377bc332201054ffca568640ddde</model>
+        <model_id>f4fe377bc332201054ffca568640ddde</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f4fe377bc332201054ffca568640ddde</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>34fe377bc332201054ffca568640dde8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>trigger_table</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">f4fe377bc332201054ffca568640ddde</model>
+        <model_id>f4fe377bc332201054ffca568640ddde</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f4fe377bc332201054ffca568640ddde</name>
+        <next_element/>
+        <order>500</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>38fe377bc332201054ffca568640ddfd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>file_or_folder_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">f4fe377bc332201054ffca568640ddde</model>
+        <model_id>f4fe377bc332201054ffca568640ddde</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f4fe377bc332201054ffca568640ddde</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>78fe377bc332201054ffca568640dded</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>file_description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">f4fe377bc332201054ffca568640ddde</model>
+        <model_id>f4fe377bc332201054ffca568640ddde</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f4fe377bc332201054ffca568640ddde</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>bcfe377bc332201054ffca568640ddf2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>googledrive_connection</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">f4fe377bc332201054ffca568640ddde</model>
+        <model_id>f4fe377bc332201054ffca568640ddde</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f4fe377bc332201054ffca568640ddde</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:33</sys_created_on>
+        <sys_id>f0fe377bc332201054ffca568640ddf8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_action_input action="delete_multiple" query="model=a8fe377bc332201054ffca568640ddb5^sys_idNOT IN28fe377bc332201054ffca568640ddcc,2cfe377bc332201054ffca568640ddc1,34fe377bc332201054ffca568640ddd7,a0fe377bc332201054ffca568640ddc7,a4fe377bc332201054ffca568640ddbb,acfe377bc332201054ffca568640ddd1"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=80287a71-5189-4454-ab9d-746fa77828f1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>file_description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>file_description</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="FT Copy new record attachments to Google Drive">a8fe377bc332201054ffca568640ddb5</model>
+        <model_id>a8fe377bc332201054ffca568640ddb5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>28fe377bc332201054ffca568640ddcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID),uiUniqueId=d03e6f22-221f-4755-8bff-227974c30536</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>new_flow_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>new_flow_sys_id</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="FT Copy new record attachments to Google Drive">a8fe377bc332201054ffca568640ddb5</model>
+        <model_id>a8fe377bc332201054ffca568640ddb5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>2cfe377bc332201054ffca568640ddc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1d9eff78-a55a-4817-86f7-d708a9fdab6f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>trigger_table</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>trigger_table</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="FT Copy new record attachments to Google Drive">a8fe377bc332201054ffca568640ddb5</model>
+        <model_id>a8fe377bc332201054ffca568640ddb5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>34fe377bc332201054ffca568640ddd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=11f2853f-e54c-4652-93b1-a9b4ecca2976</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>file_or_folder_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>file_or_folder_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="FT Copy new record attachments to Google Drive">a8fe377bc332201054ffca568640ddb5</model>
+        <model_id>a8fe377bc332201054ffca568640ddb5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>a0fe377bc332201054ffca568640ddc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID),uiUniqueId=f9685aab-d0f0-4dd3-992b-531d10395486</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_scope_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>flow_scope_sys_id</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="FT Copy new record attachments to Google Drive">a8fe377bc332201054ffca568640ddb5</model>
+        <model_id>a8fe377bc332201054ffca568640ddb5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>a4fe377bc332201054ffca568640ddbb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e4bc8651-e9e9-4dbb-9011-357adc16933e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>googledrive_connection</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>googledrive_connection</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="FT Copy new record attachments to Google Drive">a8fe377bc332201054ffca568640ddb5</model>
+        <model_id>a8fe377bc332201054ffca568640ddb5</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>acfe377bc332201054ffca568640ddd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:32</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5^sys_idNOT IN64fe377bc332201054ffca568640ddcb,68fe377bc332201054ffca568640ddc0,70fe377bc332201054ffca568640ddd6,e8fe377bc332201054ffca568640ddd0,ecfe377bc332201054ffca568640ddc5,f4fe377bc332201054ffca568640dddb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>file_or_folder_name</element>
+        <help/>
+        <hint/>
+        <label>file_or_folder_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>64fe377bc332201054ffca568640ddcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>flow_scope_sys_id</element>
+        <help/>
+        <hint/>
+        <label>flow_scope_sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>68fe377bc332201054ffca568640ddc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>googledrive_connection</element>
+        <help/>
+        <hint/>
+        <label>googledrive_connection</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>70fe377bc332201054ffca568640ddd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>file_description</element>
+        <help/>
+        <hint/>
+        <label>file_description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>e8fe377bc332201054ffca568640ddd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>new_flow_sys_id</element>
+        <help/>
+        <hint/>
+        <label>new_flow_sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>ecfe377bc332201054ffca568640ddc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>trigger_table</element>
+        <help/>
+        <hint/>
+        <label>trigger_table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a8fe377bc332201054ffca568640ddb5</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:32</sys_created_on>
+        <sys_id>f4fe377bc332201054ffca568640dddb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:32</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=a8fe377bc332201054ffca568640ddb5^sys_idNOT INf6feb77bc332201054ffca568640dda5"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="FT Copy new record attachments to Google Drive">a8fe377bc332201054ffca568640ddb5</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"f6feb77bc332201054ffca568640dda5","name":"plan"}}</plan>
+        <snapshot>befeb77bc332201054ffca568640dd5f</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6feb77bc332201054ffca568640dda5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:41</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>ft_copy_new_record_attachments_to_google_drive</internal_name>
+        <label_cache>[{"name":"{{action.flow_scope_sys_id}}","label":"action➛flow_scope_sys_id","type":"action","ref":""},{"name":"{{action.new_flow_sys_id}}","label":"action➛new_flow_sys_id","type":"action","ref":""},{"name":"{{action.file_or_folder_name}}","label":"action➛file_or_folder_name","type":"action","ref":""},{"name":"{{action.file_description}}","label":"action➛file_description","type":"action","ref":""},{"name":"{{action.googledrive_connection}}","label":"action➛googledrive_connection","type":"action","ref":""},{"name":"{{action.trigger_table}}","label":"action➛trigger_table","type":"action","ref":""}]</label_cache>
+        <master>true</master>
+        <name>FT Copy new record attachments to Google Drive</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="FT Copy new record attachments to Google Drive">a8fe377bc332201054ffca568640ddb5</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5afeb77bc332201054ffca568640dd00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:39</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=5afeb77bc332201054ffca568640dd00"/>
+    <sys_variable_value action="delete_multiple" query="document_key=5afeb77bc332201054ffca568640dd00"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=5afeb77bc332201054ffca568640dd00^sys_idNOT IN2efeb77bc332201054ffca568640dd32"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="FT Copy new record attachments to Google Drive">5afeb77bc332201054ffca568640dd00</action>
+        <cid>d0029267-ff70-4dea-8fd6-53051916c8ee</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>2efeb77bc332201054ffca568640dd32</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2efeb77bc332201054ffca568640dd32"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2efeb77bc332201054ffca568640dd32</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>2afeb77bc332201054ffca568640dd5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var inputScope = inputs.flow_scope_sys_id;
+  var newFlow = inputs.new_flow_sys_id;
+  var folderName = inputs.file_or_folder_name;
+  var fileDescription = inputs.file_description;
+  var googledriveConnection = inputs.googledrive_connection;
+  var triggerTable = inputs.trigger_table;
+
+  //update trigger table name
+  sn_flow.FlowTemplates.updateFlowTrigger(newFlow, 'condition', "table_name="+triggerTable);
+  
+  // update folderpath onedrive
+  sn_flow.FlowTemplates.updateFlowActions(newFlow, '1', 'file_or_folder_name', folderName);
+  
+  // update folderpath onedrive
+  sn_flow.FlowTemplates.updateFlowActions(newFlow, '3', 'file_description', fileDescription);
+
+  new global.FlowTemplatesHelper().activateConnection(googledriveConnection);
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2efeb77bc332201054ffca568640dd32</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>66feb77bc332201054ffca568640dd5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2efeb77bc332201054ffca568640dd32"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>2efeb77bc332201054ffca568640dd32</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>22feb77bc332201054ffca568640dd5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file_description</field>
+        <id>2efeb77bc332201054ffca568640dd32</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>72feb77bc332201054ffca568640dd5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_2efeb77bc332201054ffca568640dd32</table>
+        <value>{{action.file_description}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>file_or_folder_name</field>
+        <id>2efeb77bc332201054ffca568640dd32</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>b2feb77bc332201054ffca568640dd5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_2efeb77bc332201054ffca568640dd32</table>
+        <value>{{action.file_or_folder_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>flow_scope_sys_id</field>
+        <id>2efeb77bc332201054ffca568640dd32</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>fafeb77bc332201054ffca568640dd5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_2efeb77bc332201054ffca568640dd32</table>
+        <value>{{action.flow_scope_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>googledrive_connection</field>
+        <id>2efeb77bc332201054ffca568640dd32</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>3afeb77bc332201054ffca568640dd5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_2efeb77bc332201054ffca568640dd32</table>
+        <value>{{action.googledrive_connection}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>new_flow_sys_id</field>
+        <id>2efeb77bc332201054ffca568640dd32</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>befeb77bc332201054ffca568640dd5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_2efeb77bc332201054ffca568640dd32</table>
+        <value>{{action.new_flow_sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>2efeb77bc332201054ffca568640dd32</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>e2feb77bc332201054ffca568640dd5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>trigger_table</field>
+        <id>2efeb77bc332201054ffca568640dd32</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>76feb77bc332201054ffca568640dd5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_2efeb77bc332201054ffca568640dd32</table>
+        <value>{{action.trigger_table}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=2efeb77bc332201054ffca568640dd32^sys_idNOT IN22feb77bc332201054ffca568640dd41,66feb77bc332201054ffca568640dd46,aafeb77bc332201054ffca568640dd4b,aefeb77bc332201054ffca568640dd35,eafeb77bc332201054ffca568640dd3b,eefeb77bc332201054ffca568640dd50"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>file_or_folder_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>file_or_folder_name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">2efeb77bc332201054ffca568640dd32</model>
+        <model_id>2efeb77bc332201054ffca568640dd32</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_2efeb77bc332201054ffca568640dd32</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>22feb77bc332201054ffca568640dd41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>file_description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>file_description</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">2efeb77bc332201054ffca568640dd32</model>
+        <model_id>2efeb77bc332201054ffca568640dd32</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_2efeb77bc332201054ffca568640dd32</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>66feb77bc332201054ffca568640dd46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>googledrive_connection</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>googledrive_connection</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">2efeb77bc332201054ffca568640dd32</model>
+        <model_id>2efeb77bc332201054ffca568640dd32</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_2efeb77bc332201054ffca568640dd32</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>aafeb77bc332201054ffca568640dd4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_scope_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>flow_scope_sys_id</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">2efeb77bc332201054ffca568640dd32</model>
+        <model_id>2efeb77bc332201054ffca568640dd32</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_2efeb77bc332201054ffca568640dd32</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>aefeb77bc332201054ffca568640dd35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID)</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>new_flow_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>new_flow_sys_id</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Script step">2efeb77bc332201054ffca568640dd32</model>
+        <model_id>2efeb77bc332201054ffca568640dd32</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_2efeb77bc332201054ffca568640dd32</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>eafeb77bc332201054ffca568640dd3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>trigger_table</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>trigger_table</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">2efeb77bc332201054ffca568640dd32</model>
+        <model_id>2efeb77bc332201054ffca568640dd32</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_2efeb77bc332201054ffca568640dd32</name>
+        <next_element/>
+        <order>500</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>eefeb77bc332201054ffca568640dd50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_action_input action="delete_multiple" query="model=5afeb77bc332201054ffca568640dd00^sys_idNOT IN26feb77bc332201054ffca568640dd26,2afeb77bc332201054ffca568640dd1b,a2feb77bc332201054ffca568640dd16,aafeb77bc332201054ffca568640dd2b,aefeb77bc332201054ffca568640dd20,eafeb77bc332201054ffca568640dd03"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=e4bc8651-e9e9-4dbb-9011-357adc16933e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>googledrive_connection</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>googledrive_connection</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="FT Copy new record attachments to Google Drive">5afeb77bc332201054ffca568640dd00</model>
+        <model_id>5afeb77bc332201054ffca568640dd00</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>26feb77bc332201054ffca568640dd26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=11f2853f-e54c-4652-93b1-a9b4ecca2976</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>file_or_folder_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>file_or_folder_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="FT Copy new record attachments to Google Drive">5afeb77bc332201054ffca568640dd00</model>
+        <model_id>5afeb77bc332201054ffca568640dd00</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>2afeb77bc332201054ffca568640dd1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID),uiUniqueId=d03e6f22-221f-4755-8bff-227974c30536</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>new_flow_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>new_flow_sys_id</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="FT Copy new record attachments to Google Drive">5afeb77bc332201054ffca568640dd00</model>
+        <model_id>5afeb77bc332201054ffca568640dd00</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>a2feb77bc332201054ffca568640dd16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1d9eff78-a55a-4817-86f7-d708a9fdab6f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>trigger_table</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>trigger_table</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="FT Copy new record attachments to Google Drive">5afeb77bc332201054ffca568640dd00</model>
+        <model_id>5afeb77bc332201054ffca568640dd00</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00</name>
+        <next_element/>
+        <order>6</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>aafeb77bc332201054ffca568640dd2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=80287a71-5189-4454-ab9d-746fa77828f1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>file_description</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>file_description</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="FT Copy new record attachments to Google Drive">5afeb77bc332201054ffca568640dd00</model>
+        <model_id>5afeb77bc332201054ffca568640dd00</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>aefeb77bc332201054ffca568640dd20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=GUID,uiTypeLabel=Sys ID (GUID),uiUniqueId=f9685aab-d0f0-4dd3-992b-531d10395486</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>flow_scope_sys_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">GUID</internal_type>
+        <label>flow_scope_sys_id</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="FT Copy new record attachments to Google Drive">5afeb77bc332201054ffca568640dd00</model>
+        <model_id>5afeb77bc332201054ffca568640dd00</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:39</sys_created_on>
+        <sys_id>eafeb77bc332201054ffca568640dd03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00^sys_idNOT IN62feb77bc332201054ffca568640dd25,66feb77bc332201054ffca568640dd1a,6efeb77bc332201054ffca568640dd2f,e6feb77bc332201054ffca568640dd2a,eafeb77bc332201054ffca568640dd1f,eefeb77bc332201054ffca568640dd14"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>file_description</element>
+        <help/>
+        <hint/>
+        <label>file_description</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>62feb77bc332201054ffca568640dd25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>file_description</sys_name>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00_file_description_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>new_flow_sys_id</element>
+        <help/>
+        <hint/>
+        <label>new_flow_sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>66feb77bc332201054ffca568640dd1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>new_flow_sys_id</sys_name>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00_new_flow_sys_id_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>trigger_table</element>
+        <help/>
+        <hint/>
+        <label>trigger_table</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>6efeb77bc332201054ffca568640dd2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>trigger_table</sys_name>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00_trigger_table_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>googledrive_connection</element>
+        <help/>
+        <hint/>
+        <label>googledrive_connection</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>e6feb77bc332201054ffca568640dd2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>googledrive_connection</sys_name>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00_googledrive_connection_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>file_or_folder_name</element>
+        <help/>
+        <hint/>
+        <label>file_or_folder_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>eafeb77bc332201054ffca568640dd1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>file_or_folder_name</sys_name>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00_file_or_folder_name_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>flow_scope_sys_id</element>
+        <help/>
+        <hint/>
+        <label>flow_scope_sys_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-17 06:24:40</sys_created_on>
+        <sys_id>eefeb77bc332201054ffca568640dd14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>flow_scope_sys_id</sys_name>
+        <sys_package display_value="Flow Templates for Document Management" source="sn_document_mgmt">50c33733537220106cc4ddeeff7b12e8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Flow Templates for Document Management">50c33733537220106cc4ddeeff7b12e8</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_5afeb77bc332201054ffca568640dd00_flow_scope_sys_id_en</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-17 06:24:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>a8fe377bc332201054ffca568640ddb5</sys_id>
+        <latest_snapshot>5afeb77bc332201054ffca568640dd00</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>
